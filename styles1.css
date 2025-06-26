@@ -1,0 +1,123 @@
+body {
+    display: flex; /* Sử dụng flexbox để căn giữa nội dung */
+    flex-direction: column; /* Sắp xếp các phần tử theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    height: 100vh; /* Chiều cao toàn bộ viewport */
+    background: rgb(195, 195, 195); /* Màu nền xám */
+    margin: 0; /* Bỏ margin mặc định */
+    font-family: Arial, sans-serif; /* Chọn font chữ */
+}
+
+.menu {
+    position: fixed; /* Menu cố định ở vị trí đầu trang */
+    top: 0; /* Đặt menu ở trên cùng */
+    left: 0; /* Căn trái */
+    right: 0; /* Căn phải */
+    background-color: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    display: flex; /* Sử dụng flexbox cho menu */
+    padding: 10px; /* Khoảng cách bên trong menu */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho menu */
+    z-index: 1000; /* Đảm bảo menu luôn ở trên cùng */
+}
+
+.logo-container {
+    display: flex; /* Sử dụng flexbox cho logo */
+    align-items: center; /* Căn giữa logo theo chiều dọc */
+    margin-right: auto; /* Đẩy logo sang bên trái */
+}
+
+.menu img {
+    height: auto; /* Đặt chiều cao tự động cho hình ảnh */
+    margin-bottom: 0; /* Bỏ margin dưới hình ảnh */
+}
+
+.menu img:first-child {
+    width: 145px; /* Chiều rộng cho hình ảnh logo đầu tiên */
+}
+
+.menu img:last-child {
+    width: 202px; /* Chiều rộng cho hình ảnh logo thứ hai */
+    height: 171px; /* Chiều cao cho hình ảnh logo thứ hai */
+}
+
+.nav-links {
+    display: flex; /* Sử dụng flexbox cho liên kết điều hướng */
+    margin-left: auto; /* Đẩy các liên kết sang bên phải */
+}
+
+.nav-links a {
+    text-decoration: none; /* Bỏ gạch chân cho liên kết */
+    color: rgb(0, 0, 0); /* Màu chữ đen */
+    margin: 0 15px; /* Khoảng cách giữa các liên kết */
+    font-weight: bold; /* Đặt chữ in đậm */
+    transition: color 0.3s; /* Hiệu ứng chuyển đổi màu chữ */
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #00890bb0; /* Màu chữ khi hover hoặc focus */
+}
+
+h2 {
+    font-size: 3rem; /* Kích thước chữ cho tiêu đề */
+    background: linear-gradient(45deg, #00d9ff, #00ffdd, #6bff6b, #00860d); /* Hiệu ứng gradient cho nền chữ */
+    background-size: 400% 400%; /* Kích thước nền gradient */
+    background-clip: text; /* Cắt nền gradient theo chữ */
+    color: transparent; /* Đặt màu chữ thành trong suốt */
+    animation: animateGradient 10s linear infinite; /* Hiệu ứng animation cho gradient */
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-top: 150px; /* Tăng giá trị này để di chuyển tiêu đề xuống */
+}
+
+@keyframes animateGradient {
+    0% { background-position: 0% 50%; } /* Vị trí bắt đầu của gradient */
+    50% { background-position: 100% 50%; } /* Vị trí giữa của gradient */
+    100% { background-position: 0% 50%; } /* Vị trí kết thúc của gradient */
+}
+
+.container {
+    display: flex; /* Sử dụng flexbox cho container sản phẩm */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    margin-top: 20px; /* Khoảng cách trên cho container */
+    flex-wrap: wrap; /* Cho phép gói lại để đáp ứng */
+    padding-top: 100px; /* Khoảng cách cho menu cố định */
+}
+
+.card {
+    width: 200px; /* Chiều rộng cho thẻ sản phẩm */
+    height: 300px; /* Chiều cao cho thẻ sản phẩm */
+    perspective: 1000px;/* Thiết lập chiều sâu 3D */
+}
+
+.wrapper {
+    position: relative; /* Đặt vị trí tương đối cho wrapper */
+    width: 100%; /* Chiều rộng 100% */
+    height: 100%; /* Chiều cao 100% */
+    transition: transform 0.5s; /* Hiệu ứng chuyển đổi khi xoay */
+    transform-style: preserve-3d; /* Giữ kiểu 3D cho các phần tử con */
+}
+
+.card:hover .wrapper {
+    transform: rotateY(180deg); /* Xoay thẻ khi hover */
+}
+
+img {
+    width: 100%; /* Chiều rộng hình ảnh 100% */
+    height: 100%; /* Chiều cao hình ảnh 100% */
+    border-radius: 10px; /* Bo tròn các góc của hình ảnh */
+    object-fit: cover; /* Giữ tỷ lệ khung hình cho hình ảnh */
+}
+
+.title {
+    position: absolute; /* Đặt tiêu đề ở vị trí tuyệt đối */
+    bottom: 0; /* Căn dưới cùng */
+    left: 0; /* Căn trái */
+    right: 0; /* Căn phải */
+    background: linear-gradient(45deg, #00d9ff, #00ffdd, #6bff6b, #00860d); /* Hiệu ứng gradient cho nền tiêu đề */
+    background-size: 400% 400%; /* Kích thước nền gradient */
+    background-clip: text; /* Cắt nền gradient theo chữ */
+    color: transparent; /* Đặt màu chữ thành trong suốt */
+    text-align: center; /* Căn giữa tiêu đề */
+    padding: 10px; /* Khoảng cách bên trong cho tiêu đề */
+}

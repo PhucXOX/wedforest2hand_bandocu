@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"> <!-- Liên kết đến tệp CSS cho trang đăng nhập -->
+    <title>Trang Đăng Nhập</title> <!-- Tiêu đề của trang -->
+</head>
+<body>
+    <div class="wrapper">
+        <div class="icon-close"><ion-icon name="close"></ion-icon></div> <!-- Biểu tượng đóng -->
+        <a href="Untitled-1.html">
+            <img src="FOREST-.png" alt="Hình ảnh Rừng" class="background-image"> <!-- Hình ảnh nền -->
+        </a>
+        <div class="form-box login"> <!-- Khung cho biểu mẫu đăng nhập -->
+            <h2>Đăng Nhập</h2> <!-- Tiêu đề của biểu mẫu -->
+            <form id="login-form"> <!-- Biểu mẫu đăng nhập -->
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span> <!-- Biểu tượng email -->
+                    <input type="email" id="login-email" required> <!-- Trường nhập email -->
+                    <label>Email</label> <!-- Nhãn cho trường nhập email -->
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span> <!-- Biểu tượng mật khẩu -->
+                    <input type="password" id="login-password" required> <!-- Trường nhập mật khẩu -->
+                    <label>Mật khẩu</label> <!-- Nhãn cho trường nhập mật khẩu -->
+                </div>
+                <button type="submit" class="btn">Đăng Nhập</button> <!-- Nút gửi biểu mẫu -->
+                <div class="login-register">
+                    <p>Chưa có tài khoản? <a href="register.html" class="register-link">Đăng ký</a></p> <!-- Liên kết đến trang đăng ký -->
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của biểu mẫu
+            const email = document.getElementById('login-email').value; // Lấy giá trị email
+            const password = document.getElementById('login-password').value; // Lấy giá trị mật khẩu
+
+            // Lấy thông tin từ Local Storage
+            const storedEmail = localStorage.getItem('email'); // Lấy email đã lưu
+            const storedPassword = localStorage.getItem('password'); // Lấy mật khẩu đã lưu
+
+            // Kiểm tra thông tin đăng nhập
+            if (email === storedEmail && password === storedPassword) {
+                alert('Đăng nhập thành công!'); // Thông báo khi đăng nhập thành công
+                // Chuyển hướng đến trang cửa hàng
+                window.location.href = 'store.html'; // Thay đổi thành trang cửa hàng của bạn
+            } else {
+                alert('Thông tin đăng nhập không đúng. Vui lòng thử lại.'); // Thông báo khi thông tin không đúng
+            }
+        });
+    </script>
+</body>
+</html>

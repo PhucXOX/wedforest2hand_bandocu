@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Trang Đăng Ký</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="icon-close"><ion-icon name="close"></ion-icon></div>
+        <div class="form-box register">
+            <h2>Đăng Ký</h2>
+            <form id="registration-form">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" id="recipient-name" required>
+                    <label>Tên người nhận</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="phone-portrait"></ion-icon></span>
+                    <input type="text" id="phone" required>
+                    <label>Số điện thoại</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="home"></ion-icon></span>
+                    <input type="text" id="address" required>
+                    <label>Địa chỉ giao hàng</label>
+                </div>
+                <button type="submit" class="btn">Đăng Ký</button>
+                <div class="login-register">
+                    <p>Đã có tài khoản? <a href="login.html" class="register-link">Đăng nhập</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const recipientName = document.getElementById('recipient-name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const address = document.getElementById('address').value;
+
+            // Lưu thông tin vào Local Storage
+            localStorage.setItem('recipientName', recipientName);
+            localStorage.setItem('phone', phone); // Lưu số điện thoại
+            localStorage.setItem('email', email);
+            localStorage.setItem('password', password);
+            localStorage.setItem('deliveryAddress', address); // Lưu địa chỉ giao hàng
+
+            alert('Đăng ký thành công!');
+
+            // Chuyển hướng đến trang store
+            window.location.href = 'store.html'; // Chuyển đến trang store
+        });
+    </script>
+</body>
+
+</html>

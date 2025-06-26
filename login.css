@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif; /* Chọn font chữ */
+    background: url('cosang.gif') no-repeat center center fixed; /* Đặt hình nền */
+    background-size: cover; /* Đảm bảo hình nền phủ kín */
+    margin: 0; /* Bỏ margin mặc định */
+    padding: 0; /* Bỏ padding mặc định */
+}
+
+.wrapper {
+    width: 400px; /* Chiều rộng của khung */
+    padding: 40px; /* Khoảng cách bên trong khung */
+    background: rgba(255, 255, 255, 0.8); /* Nền trắng với độ trong suốt */
+    border-radius: 10px; /* Bo tròn các góc */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5); /* Đổ bóng cho khung */
+    margin: auto; /* Căn giữa khung */
+    margin-top: 100px; /* Khoảng cách từ trên xuống */
+}
+
+.form-box {
+    display: flex; /* Sử dụng flexbox để căn chỉnh */
+    flex-direction: column; /* Xếp theo chiều dọc */
+}
+
+.input-box {
+    position: relative; /* Để có thể đặt biểu tượng ở vị trí tuyệt đối */
+    margin-bottom: 30px; /* Khoảng cách giữa các ô nhập liệu */
+}
+
+.input-box input {
+    width: 100%; /* Chiều rộng 100% */
+    padding: 10px; /* Khoảng cách bên trong ô nhập liệu */
+    border: 1px solid #ccc; /* Đường viền xung quanh ô nhập liệu */
+    border-radius: 5px; /* Bo tròn các góc của ô nhập liệu */
+}
+
+.input-box .icon {
+    position: absolute; /* Đặt biểu tượng ở vị trí tuyệt đối */
+    left: 10px; /* Căn trái 10px */
+    top: 10px; /* Căn trên 10px */
+}
+
+.btn {
+    padding: 10px; /* Khoảng cách bên trong nút */
+    width: 100%; /* Chiều rộng 100% */
+    background: #3498db; /* Màu nền cho nút */
+    border: none; /* Bỏ đường viền */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+    color: white; /* Màu chữ trong nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+}
+
+.login-register {
+    text-align: center; /* Căn giữa nội dung trong phần đăng ký */
+}
+
+.login-register a {
+    color: #3498db; /* Màu chữ cho liên kết đăng ký */
+}

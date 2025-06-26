@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif; /* Chọn font chữ cho toàn bộ trang */
+    margin: 0; /* Bỏ margin mặc định */
+    background-color: #f4f4f4; /* Màu nền cho toàn bộ trang */
+    text-align: center; /* Căn giữa nội dung */
+}
+
+.header {
+    background-color: #616161; /* Màu nền cho phần đầu trang */
+    color: white; /* Màu chữ trắng */
+    padding: 20px; /* Khoảng cách bên trong phần đầu trang */
+}
+
+.logo-container {
+    margin-bottom: 10px; /* Khoảng cách dưới logo */
+}
+
+.logo-container img {
+    width: 200px; /* Điều chỉnh kích thước logo nếu cần */
+}
+
+h2 {
+    font-size: 3rem; /* Kích thước chữ cho tiêu đề */
+    background: linear-gradient(45deg, #e1e1e1, #00ff15ad, #727272, #989898); /* Hiệu ứng gradient cho nền chữ */
+    background-size: 400% 400%; /* Kích thước nền gradient */
+    background-clip: text; /* Cắt nền gradient theo chữ */
+    color: transparent; /* Đặt màu chữ thành trong suốt */
+    animation: animateGradient 10s linear infinite; /* Hiệu ứng animation cho gradient */
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-top: 50px; /* Tăng giá trị này để di chuyển tiêu đề xuống */
+}
+
+.cart-info {
+    margin: 20px 0; /* Khoảng cách trên và dưới cho thông tin giỏ hàng */
+    font-size: 18px; /* Kích thước chữ cho thông tin giỏ hàng */
+}
+
+.search-bar {
+    margin: 20px 0; /* Khoảng cách trên và dưới cho thanh tìm kiếm */
+}
+
+.search-bar input {
+    padding: 10px; /* Khoảng cách bên trong ô tìm kiếm */
+    width: 200px; /* Điều chỉnh kích thước ô tìm kiếm */
+    border: 1px solid #ccc; /* Đường viền cho ô tìm kiếm */
+    border-radius: 5px; /* Bo tròn các góc cho ô tìm kiếm */
+}
+
+.search-bar button {
+    padding: 10px 15px; /* Khoảng cách bên trong nút tìm kiếm */
+    background-color: #28a745; /* Màu nền cho nút tìm kiếm */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Bỏ đường viền cho nút */
+    border-radius: 5px; /* Bo tròn các góc cho nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+    margin-left: 5px; /* Khoảng cách bên trái cho nút tìm kiếm */
+}
+
+.search-bar button:hover {
+    background-color: #218838; /* Màu nền khi di chuột qua nút tìm kiếm */
+}
+
+.container {
+    display: grid; /* Sử dụng grid layout cho container sản phẩm */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Thiết lập các cột tự động */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 20px; /* Khoảng cách bên trong container */
+}
+
+.product {
+    background: white; /* Màu nền cho sản phẩm */
+    padding: 15px; /* Khoảng cách bên trong sản phẩm */
+    border-radius: 8px; /* Bo tròn các góc cho sản phẩm */
+    text-align: center; /* Căn giữa nội dung sản phẩm */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho sản phẩm */
+    transition: transform 0.2s; /* Hiệu ứng chuyển đổi cho sản phẩm khi hover */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Phóng to sản phẩm khi hover */
+}
+
+.product img {
+    width: 100%; /* Chiều rộng hình ảnh sản phẩm */
+    height: auto; /* Chiều cao tự động để duy trì tỷ lệ */
+}
+
+.add-to-cart {
+    background-color: #28a745; /* Màu nền cho nút thêm vào giỏ hàng */
+    color: white; /* Màu chữ trắng */
+    border: none; /* Bỏ đường viền cho nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi di chuột qua nút */
+    border-radius: 5px; /* Bo tròn các góc cho nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền cho nút */
+}
+
+.add-to-cart:hover {
+    background-color: #218838; /* Màu nền khi di chuột qua nút thêm vào giỏ hàng */
+}
+
+.cart-gif, .reset-gif {
+    width: 50px; /* Kích thước cho biểu tượng giỏ hàng và reset */
+}
+
+#thank-you-message {
+    text-align: center; /* Căn giữa nội dung thông báo cảm ơn */
+    margin-top: 20px; /* Khoảng cách trên cho thông báo cảm ơn */
+}

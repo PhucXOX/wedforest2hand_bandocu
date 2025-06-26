@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="store.css">
+    <title>Cửa Hàng Forest.store</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <a href="Untitled-1.html">
+                <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzZoMWI2cWNpeWczZnlzN2RzeHVjeW1tNGo3d2R0bGhra3dtdDR4dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Y1RVeDIDv47FgRz7ax/giphy.gif" alt="Logo Sói">
+            </a>        
+        </div>
+        <h2>𝓕𝓸𝓻𝓮𝓼𝓽.𝓼𝓽𝓸𝓻𝓮</h2>
+    </div>
+
+    <div class="cart-info">
+        <a href="#" id="checkout">
+            <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGhwMnQ4MXI1ZjZvcHcyd3k3eGQ3cjc1d3Y4eW9wM3FienFvMGVjeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/B5scNnqTCqz7AoCYro/giphy.gif" alt="Giỏ hàng" class="cart-gif"></a>
+        <span>Giỏ hàng: <span id="cart-count">0</span> sản phẩm</span>
+        <span id="cart-total">Tổng tiền: 0 VNĐ</span>
+        <button id="reset-button">
+            <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMTRsMnd2MjNwZTkyamJxZG9ieDM0bGM2dDNuM2loem9wazMzbWo4ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cPea2NiqqG7JHfOTj2/giphy.gif" alt="Reset" class="reset-gif">
+        </button>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Tìm kiếm sản phẩm...">
+        <button id="search-button">Tìm</button>
+    </div>
+
+    <div class="container">
+        <div class="product" data-price="400.000">
+            <img src="https://i.pinimg.com/736x/6f/f4/7f/6ff47fe896faf28e2c24a25441cc2eb8.jpg" alt="Douyin Style 1">
+            <h4>Converse All Star</h4>
+            <h2>400.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="250.000">
+            <img src="https://i.pinimg.com/736x/af/51/43/af51430a8994d34997caa013d89fa3d3.jpg" alt="Douyin Style 2">
+            <h4>Hoodie NY</h4>
+            <h2>250.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="300.000">
+            <img src="https://i.pinimg.com/736x/3f/88/30/3f88304d238ca50767b41c0bdc26cf04.jpg" alt="Douyin Style 3">
+            <h4>Clothes Chicago 23</h4>
+            <h2>300.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product" data-price="300.000">
+            <img src="https://i.pinimg.com/736x/4d/28/51/4d2851f7760cf17b3dd89108ae0455ff.jpg" alt="Old Money Style 1">
+            <h4>Adidas samba</h4>
+            <h2>300.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="350.000">
+            <img src="https://i.pinimg.com/736x/43/17/de/4317de914de46510827a00449aa0a7de.jpg" alt="Old Money Style 2">
+            <h4>Contrast Stitch Minimal Jacket</h4>
+            <h2>350.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="300.000">
+            <img src="https://i.pinimg.com/736x/71/99/39/719939699c7d825a46c24b79faddd649.jpg" alt="Old Money Style 3">
+            <h4>Prime Cargo Baggy Pants</h4>
+            <h2>300.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product" data-price="250.000">
+            <img src="https://i.pinimg.com/736x/04/b2/9d/04b29d2418b8806c783263549a0e564a.jpg" alt="Rap Style 1">
+            <h4>Men's Oversized Sweater</h4>
+            <h2>250.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="300.000">
+            <img src="https://i.pinimg.com/736x/dd/a3/fa/dda3fa34bdf39dfc29ed3700b093342b.jpg" alt="Rap Style 2">
+            <h4>Sweater 23</h4>
+            <h2>300.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="280.000">
+            <img src="https://product.hstatic.net/200000370449/product/z4518737940943_0d3b2b5a9345078ed0622640fe677ff1_2f5c33c590dd4d47af7811a973ac4a44_master.jpg" alt="Rap Style 3">
+            <h4>Baggy Oversized</h4>
+            <h2>280.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product" data-price="150.000">
+            <img src="https://di2ponv0v5otw.cloudfront.net/posts/2022/12/02/638a75af58083dd1c0848034/m_wp_638a75ba8bb2e25e0d617f18.webp" alt="Basic Style 1">
+            <h4>Jacket D1</h4>
+            <h2>150.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="180.000">
+            <img src="https://bizweb.dktcdn.net/100/446/974/products/ao-thun-mlb-new-era-heavy-cotton-new-york-yankees-black-13086578-1.jpg?v=1691318321487" alt="Basic Style 2">
+            <h4>Áo Thun NY</h4>
+            <h2>180.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="200.000">
+            <img src="https://thegioiaodoi.vn/wp-content/uploads/2023/10/C0072D.jpg" alt="Basic Style 3">
+            <h4>Hoodie Đôi Catoon</h4>
+            <h2>200.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+
+        <div class="product" data-price="260.000">
+            <img src="https://slyclothing.vn/images/solid_fullzip_w_new1-1000x1250.webp" alt="City Style 1">
+            <h4>Hoodie full zip Study</h4>
+            <h2>260.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="290.000">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpgnmkIx_Uiuc-DbEaeZ1bw3-CUSz_KvWKYA&s" alt="City Style 2">
+            <h4>Áo Sơ Mi</h4>
+            <h2>290.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+        <div class="product" data-price="310.000">
+            <img src="https://i.pinimg.com/736x/b7/b6/83/b7b6833fa25a06f051752b71bbc07dc2.jpg" alt="City Style 3">
+            <h4>Custom Air Force 1</h4>
+            <h2>310.000đ</h2>
+            <button class="add-to-cart">Thêm vào giỏ</button>
+        </div>
+    </div>
+
+    <div class="address-info">
+        <h3>Thông tin giao hàng</h3>
+        <p id="recipient-info"></p>
+        <button id="change-address">Thay đổi địa chỉ</button>
+    </div>
+
+    <div id="thank-you-message" style="display: none;">
+        <a href="#" id="checkout">
+            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdjNlbmp4eXJ4ZG9jYTB0ZTFnMG9ldDYwM2oybDFiZWY1bnk2Zng1NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VvkP5ZEmJXVWjLOrkt/giphy.gif" alt="Cảm ơn">
+        </a>
+        <h2>Cảm ơn quý khách hàng thân yêu đã ủng hộ Forest.store</h2>
+        <h3>Hóa đơn:</h3>
+        <p id="invoice"></p>
+    </div>
+
+    <script src="store.js"></script>
+</body>
+</html>
